@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/carnival-game/static/css/main.ae1368bf.css",
-    "main.js": "/carnival-game/static/js/main.479b949e.js",
+    "main.js": "/carnival-game/static/js/main.960f9a38.js",
     "index.html": "/carnival-game/index.html",
     "main.ae1368bf.css.map": "/carnival-game/static/css/main.ae1368bf.css.map",
-    "main.479b949e.js.map": "/carnival-game/static/js/main.479b949e.js.map"
+    "main.960f9a38.js.map": "/carnival-game/static/js/main.960f9a38.js.map"
   },
   "entrypoints": [
     "static/css/main.ae1368bf.css",
-    "static/js/main.479b949e.js"
+    "static/js/main.960f9a38.js"
   ]
 }
