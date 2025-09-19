@@ -420,7 +420,7 @@ const GameCanvas: React.FC = () => {
       <canvas
         ref={canvasRef}
         onClick={handleCanvasClick}
-        className="fixed inset-0 cursor-pointer bg-gradient-to-br from-blue-400 via-purple-500 to-pink-400"
+        className="fixed inset-0 cursor-pointer bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50"
         style={{ 
           touchAction: 'none',
           width: '100vw',

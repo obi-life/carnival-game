@@ -26,7 +26,7 @@ const GameSetup: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600">
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-primary to-black">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         {/* Floating Carnival Elements */}
@@ -36,7 +36,7 @@ const GameSetup: React.FC = () => {
             rotate: [0, 5, -5, 0]
           }}
           transition={{ duration: 4, repeat: Infinity }}
-          className="absolute top-10 left-10 text-4xl"
+          className="absolute top-10 left-10 text-6xl opacity-70 text-white"
         >
           🎪
         </motion.div>
@@ -47,7 +47,7 @@ const GameSetup: React.FC = () => {
             x: [0, 10, 0]
           }}
           transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
-          className="absolute top-20 right-16 text-3xl"
+          className="absolute top-20 right-16 text-5xl opacity-70 text-white"
         >
           🎠
         </motion.div>
@@ -58,7 +58,7 @@ const GameSetup: React.FC = () => {
             rotate: [0, -10, 10, 0]
           }}
           transition={{ duration: 5, repeat: Infinity, delay: 1 }}
-          className="absolute bottom-20 left-20 text-3xl"
+          className="absolute bottom-20 left-20 text-5xl opacity-50"
         >
           🎡
         </motion.div>
@@ -69,7 +69,7 @@ const GameSetup: React.FC = () => {
             scale: [1, 1.1, 1]
           }}
           transition={{ duration: 3.5, repeat: Infinity, delay: 1.5 }}
-          className="absolute bottom-32 right-12 text-3xl"
+          className="absolute bottom-32 right-12 text-5xl opacity-50"
         >
           🎭
         </motion.div>
@@ -82,7 +82,7 @@ const GameSetup: React.FC = () => {
             scale: [1, 1.2, 1]
           }}
           transition={{ duration: 4, repeat: Infinity }}
-          className="absolute top-32 left-1/4 text-2xl opacity-70"
+          className="absolute top-32 left-1/4 text-4xl opacity-40"
         >
           🫧
         </motion.div>
@@ -93,7 +93,7 @@ const GameSetup: React.FC = () => {
             x: [0, -10, 0]
           }}
           transition={{ duration: 3, repeat: Infinity, delay: 2 }}
-          className="absolute top-40 right-1/3 text-xl opacity-60"
+          className="absolute top-40 right-1/3 text-3xl opacity-60"
         >
           💧
         </motion.div>
@@ -104,7 +104,7 @@ const GameSetup: React.FC = () => {
             scale: [1, 1.3, 1]
           }}
           transition={{ duration: 5, repeat: Infinity, delay: 0.8 }}
-          className="absolute bottom-40 left-1/3 text-2xl opacity-80"
+          className="absolute bottom-40 left-1/3 text-4xl opacity-80"
         >
           🫧
         </motion.div>
@@ -116,7 +116,7 @@ const GameSetup: React.FC = () => {
             scale: [1, 1.1, 1]
           }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="absolute top-16 left-1/2 text-2xl"
+          className="absolute top-16 left-1/2 text-4xl"
         >
           🎉
         </motion.div>
@@ -127,7 +127,7 @@ const GameSetup: React.FC = () => {
             y: [0, -10, 0]
           }}
           transition={{ duration: 2.5, repeat: Infinity, delay: 1 }}
-          className="absolute bottom-16 right-1/4 text-2xl"
+          className="absolute bottom-16 right-1/4 text-4xl"
         >
           🎊
         </motion.div>
@@ -139,7 +139,7 @@ const GameSetup: React.FC = () => {
             rotate: [0, 360]
           }}
           transition={{ duration: 6, repeat: Infinity }}
-          className="absolute top-24 right-1/2 text-xl opacity-70"
+          className="absolute top-24 right-1/2 text-3xl opacity-70"
         >
           ✨
         </motion.div>
@@ -150,7 +150,7 @@ const GameSetup: React.FC = () => {
             rotate: [0, -360]
           }}
           transition={{ duration: 4, repeat: Infinity, delay: 2 }}
-          className="absolute bottom-28 left-1/2 text-xl opacity-80"
+          className="absolute bottom-28 left-1/2 text-3xl opacity-80"
         >
           🌟
         </motion.div>
@@ -162,7 +162,7 @@ const GameSetup: React.FC = () => {
           initial={{ opacity: 0, y: 50, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, type: "spring" }}
-          className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl max-w-lg w-full p-8 border-4 border-white/50"
+          className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl max-w-lg w-full p-8 border-4 border-white/30"
         >
           {/* Header */}
           <div className="text-center mb-6">
@@ -190,25 +190,25 @@ const GameSetup: React.FC = () => {
             </motion.div>
             
             <motion.h1 
-              className="bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 bg-clip-text text-transparent text-4xl font-bold mb-4"
+              className="bg-gradient-to-r from-primary to-black bg-clip-text text-transparent text-4xl font-bold mb-4"
               animate={{ scale: [1, 1.02, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             >
-              Pop the bubbles!
+              Bubble Pop Gauge
             </motion.h1>
             
             {/* Highlighted Message */}
             <motion.div 
-              className="bg-gradient-to-r from-yellow-200 via-orange-200 to-red-200 border-3 border-orange-400 rounded-2xl p-4 mb-6 shadow-lg"
+              className="bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 border-2 border-indigo-200 rounded-2xl p-4 mb-6 shadow-lg"
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <div className="bg-white/90 rounded-xl p-4">
+              <div className="bg-white rounded-xl p-4 border border-gray-100">
                 <p className="text-gray-800 font-semibold text-sm mb-3 leading-relaxed">
                   🎯 Tap or click the bubbles that show your name icon. Other bubbles are decoys. Pop as many as you can before time runs out!
                 </p>
-                <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs px-4 py-2 rounded-full inline-block font-bold shadow-md">
-                  📊 Metrics: hand-eye score, accuracy, reaction time, targets/min, streak, misses
+                <div className="bg-indigo-600 text-white text-xs px-4 py-2 rounded-full inline-block font-bold shadow-md border-2 border-indigo-700">
+                  📊 Hand-Eye Coordination for Kids: score, accuracy, reaction time, targets/min, streak, misses
                 </div>
               </div>
             </motion.div>
