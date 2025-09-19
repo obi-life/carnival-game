@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { store, RootState } from './store';
+import GameSetup from './components/GameSetup';
+import GameCanvas from './components/GameCanvas';
+import GameHUD from './components/GameHUD';
+import ResultsModal from './components/ResultsModal';
 
-function App() {
+const AppContent: React.FC = () => {
+  const { gameStarted, isPlaying } = useSelector((state: RootState) => state.game);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen">
+      {!gameStarted ? (
+        <GameSetup />
+      ) : (
+        <>
+          <GameCanvas />
+          <GameHUD />
+          <ResultsModal />
+        </>
+      )}
     </div>
   );
-}
+};
+
+const App: React.FC = () => {
+  return (
+    <Provider store={store}>
+      <AppContent />
+    </Provider>
+  );
+};
 
 export default App;
