@@ -169,7 +169,7 @@ const GameSetup: React.FC = () => {
             {/* OBI Logo and Tagline */}
             <div className="flex items-center justify-center mb-4">
               <img 
-                src="/obi-logo.svg" 
+                src={`${process.env.PUBLIC_URL}/obi-logo.svg`}
                 alt="OBI Logo" 
                 className="h-8 w-auto mr-2"
               />

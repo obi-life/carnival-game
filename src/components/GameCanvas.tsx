@@ -29,11 +29,11 @@ const GameCanvas: React.FC = () => {
 
   // Audio refs
   const audioRefs = useRef({
-    bubble: new Audio('/audio/bubble.mp3'),
-    error: new Audio('/audio/error.mp3'),
-    error2: new Audio('/audio/error2.mp3'),
-    piano: new Audio('/audio/piano.mp3'),
-    cc: new Audio('/audio/cc.mp3'),
+    bubble: new Audio(`${process.env.PUBLIC_URL}/audio/bubble.mp3`),
+    error: new Audio(`${process.env.PUBLIC_URL}/audio/error.mp3`),
+    error2: new Audio(`${process.env.PUBLIC_URL}/audio/error2.mp3`),
+    piano: new Audio(`${process.env.PUBLIC_URL}/audio/piano.mp3`),
+    cc: new Audio(`${process.env.PUBLIC_URL}/audio/cc.mp3`),
   });
 
   // Initialize piano audio for continuous play
